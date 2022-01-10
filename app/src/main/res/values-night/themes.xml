@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Aurora" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+
+    </style>
+    <style name="loaderLayoutBack" parent="Theme.Aurora">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="toolbarTheme" >
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="translucentStatusBar" parent="Theme.Aurora">
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+    <style name="timeTableStatusBar" parent="Theme.Aurora">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+
+    </style>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.SplashActivity">
+
+    <View
+        android:id="@+id/circle1"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-30dp"
+
+        android:background="@drawable/circle_red" />
+
+    <View
+        android:id="@+id/circle3"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-40dp"
+        android:layout_marginBottom="-40dp"
+
+        android:background="@drawable/circle_red"
+        android:backgroundTint="#80292C6D" />
+
+    <View
+        android:id="@+id/circle2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@id/container"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+
+        android:background="@drawable/circle_red"
+        android:backgroundTint="#80FFCC1D" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <View
+            android:id="@+id/color1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="#EC255A"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cTxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/color1"
+            app:layout_constraintEnd_toEndOf="@+id/color1"
+            app:layout_constraintStart_toStartOf="@+id/color1"
+            app:layout_constraintTop_toTopOf="@+id/color1" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="ollege"
+            android:textAllCaps="true"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/color1"
+            app:layout_constraintStart_toEndOf="@+id/color1"
+            app:layout_constraintTop_toTopOf="@+id/color1" />
+
+        <View
+            android:id="@+id/color2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="#FFCC1D"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color1" />
+
+        <TextView
+            android:id="@+id/mTxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="M"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/color2"
+            app:layout_constraintEnd_toEndOf="@+id/color2"
+            app:layout_constraintStart_toStartOf="@+id/color2"
+            app:layout_constraintTop_toTopOf="@+id/color2" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="anagement"
+            android:textAllCaps="true"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/color2"
+            app:layout_constraintStart_toEndOf="@+id/color2"
+            app:layout_constraintTop_toTopOf="@+id/color2" />
+
+
+        <View
+            android:id="@+id/color3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="#292C6D"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color2" />
+
+        <TextView
+            android:id="@+id/sTxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="S"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/color3"
+            app:layout_constraintEnd_toEndOf="@+id/color3"
+            app:layout_constraintStart_toStartOf="@+id/color3"
+            app:layout_constraintTop_toTopOf="@+id/color3" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="ystem"
+            android:textAllCaps="true"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/color3"
+            app:layout_constraintStart_toEndOf="@+id/color3"
+            app:layout_constraintTop_toTopOf="@+id/color3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

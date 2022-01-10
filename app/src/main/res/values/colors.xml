@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#6C63FF</color>
+    <color name="colorPrimaryDark">#2838cb</color>
+    <color name="authBack">#F5F5F7</color>
+
+
+    <color name="yellow">#ffab91</color>
+    <color name="lightGreen">#e6ee9b</color>
+    <color name="pink">#ffcc80</color>
+    <color name="lightPurple">#cf93d9</color>
+    <color name="skyblue">#80deea</color>
+    <color name="gray">#f48fb1</color>
+    <color name="red">#80cbc3</color>
+    <color name="realRed">#ff0000</color>
+
+
+    <color name="red1">#B71C1C</color>
+    <color name="red2">#D32F2F</color>
+    <color name="red3">#FF5252</color>
+
+</resources>

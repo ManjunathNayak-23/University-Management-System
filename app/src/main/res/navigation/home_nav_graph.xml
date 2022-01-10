@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.developer.aurora.fragments.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_lecturerListFragment"
+            app:destination="@id/lecturerListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_ideaMenuScreenFragment"
+            app:destination="@id/ideaMenuScreenFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+        <action
+            android:id="@+id/action_dashboardFragment_to_placementsFragment"
+            app:destination="@id/placementsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+        <action
+            android:id="@+id/action_dashboardFragment_to_examResultsFragment"
+            app:destination="@id/examResultsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+        <action
+            android:id="@+id/action_dashboardFragment_to_attendanceFragment"
+            app:destination="@id/attendanceFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            />
+        <action
+            android:id="@+id/action_dashboardFragment_to_busSelectionFragment"
+            app:destination="@id/busSelectionFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.developer.aurora.fragments.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" >
+        <action
+            android:id="@+id/action_eventsFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.developer.aurora.fragments.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_addFragment"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim" />
+        <action
+            android:id="@+id/action_notesFragment_to_editNoteFragment"
+            app:destination="@id/editNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.developer.aurora.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/noticeFragment"
+        android:name="com.developer.aurora.fragments.NoticeFragment"
+        android:label="fragment_notice"
+        tools:layout="@layout/fragment_notice" />
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.developer.aurora.fragments.EventDetailFragment"
+        android:label="fragment_event_detail"
+        tools:layout="@layout/fragment_event_detail" >
+        <argument
+            android:name="eventName"
+            app:argType="string" />
+        <argument
+            android:name="eventVenue"
+            app:argType="string" />
+        <argument android:name="eventEntryFees"
+            app:argType="string" />
+        <argument android:name="eventDate"
+            app:argType="string" />
+        <argument
+            android:name="eventOrganizers"
+            app:argType="string" />
+        <argument android:name="eventOrganizerEmail"
+            app:argType="string" />
+        <argument android:name="eventMoreInfo"
+            app:argType="string" />
+        <argument android:name="eventOrganizerPhoneNumber"
+            app:argType="string" />
+        <argument
+            android:name="eventBannerUrl"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.developer.aurora.fragments.AddNoteFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteFragment"
+        android:name="com.developer.aurora.fragments.EditNoteFragment"
+        android:label="fragment_edit_note"
+        tools:layout="@layout/fragment_edit_note" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="content"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturerListFragment"
+        android:name="com.developer.aurora.fragments.LecturerListFragment"
+        android:label="fragment_lecturer_list"
+        tools:layout="@layout/fragment_lecturer_list" >
+        <action
+            android:id="@+id/action_lecturerListFragment_to_lecturerDetailFragment"
+            app:destination="@id/lecturerDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturerDetailFragment"
+        android:name="com.developer.aurora.fragments.LecturerDetailFragment"
+        android:label="fragment_lecturer_detail"
+        tools:layout="@layout/fragment_lecturer_detail" >
+        <argument
+            android:name="fullName"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+        <argument
+            android:name="subjects"
+            app:argType="string" />
+        <argument
+            android:name="branch"
+            app:argType="string" />
+        <argument
+            android:name="staffRoomNumber"
+            app:argType="string" />
+        <argument
+            android:name="profilePic"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ideaMenuScreenFragment"
+        android:name="com.developer.aurora.fragments.IdeaMenuScreenFragment"
+        android:label="fragment_idea_menu_screen"
+        tools:layout="@layout/fragment_idea_menu_screen" >
+        <action
+            android:id="@+id/action_ideaMenuScreenFragment_to_uploadIdeaFragment"
+            app:destination="@id/uploadIdeaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/placementsFragment"
+        android:name="com.developer.aurora.fragments.PlacementsFragment"
+        android:label="fragment_placements"
+        tools:layout="@layout/fragment_placements" >
+        <action
+            android:id="@+id/action_placementsFragment_to_resultsWebFragment"
+            app:destination="@id/resultsWebFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/examResultsFragment"
+        android:name="com.developer.aurora.fragments.ExamResultsFragment"
+        android:label="fragment_exam_results"
+        tools:layout="@layout/fragment_exam_results" >
+        <action
+            android:id="@+id/action_examResultsFragment_to_resultsWebFragment"
+            app:destination="@id/resultsWebFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/resultsWebFragment"
+        android:name="com.developer.aurora.fragments.ResultsWebFragment"
+        android:label="fragment_results_web"
+        tools:layout="@layout/fragment_results_web" >
+        <argument
+            android:name="resultLink"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadIdeaFragment"
+        android:name="com.developer.aurora.fragments.UploadIdeaFragment"
+        android:label="fragment_upload_idea"
+        tools:layout="@layout/fragment_upload_idea" />
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="com.developer.aurora.fragments.AttendanceFragment"
+        android:label="fragment_attendance"
+        tools:layout="@layout/fragment_attendance" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="rollNo"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/busSelectionFragment"
+        android:name="com.developer.aurora.fragments.BusSelectionFragment"
+        android:label="fragment_bus_selection"
+        tools:layout="@layout/fragment_bus_selection" >
+        <action
+            android:id="@+id/action_busSelectionFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.developer.aurora.fragments.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="busNo"
+            app:argType="string" />
+    </fragment>
+</navigation>

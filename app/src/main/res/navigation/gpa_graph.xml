@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gpa_graph"
+    app:startDestination="@id/gpaBranchFragment">
+
+    <fragment
+        android:id="@+id/gpaBranchFragment"
+        android:name="com.developer.aurora.fragments.GpaBranchFragment"
+        android:label="fragment_gpa_branch"
+        tools:layout="@layout/fragment_gpa_branch" >
+        <action
+            android:id="@+id/action_gpaBranchFragment_to_gpaYearFragment"
+            app:destination="@id/gpaYearFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/gpaYearFragment"
+        android:name="com.developer.aurora.fragments.GpaYearFragment"
+        android:label="fragment_gpa_year"
+        tools:layout="@layout/fragment_gpa_year" >
+        <argument
+            android:name="branchName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_gpaYearFragment_to_gpaCalculatorFragment"
+            app:destination="@id/gpaCalculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gpaCalculatorFragment"
+        android:name="com.developer.aurora.fragments.GpaCalculatorFragment"
+        android:label="fragment_gpa_calculator"
+        tools:layout="@layout/fragment_gpa_calculator" >
+        <argument
+            android:name="branchName"
+            app:argType="string" />
+        <argument
+            android:name="semister"
+            app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/subjectName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:text="Mathematics 1"
+
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/creditsEntered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/stroke_edit"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:hint="Points"
+        android:inputType="number"
+        android:padding="6dp"
+        android:textColor="?attr/colorOnPrimary" />
+
+</LinearLayout>
