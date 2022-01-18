@@ -1,0 +1,3 @@
+# University-Management-System
+
+The College Management System is an android app that is useful for students as well as college faculty members and other academic staff. The major goal of using the College Management System is to make it easier to manage the Institute. Students can get the latest notices directly into the app in real-time, check for the latest upcoming events in the college, and track the college bus location in real-time, students can also store their important notes in the app itself, students can directly receive placement notification in-app when updated by placement officer, students can also save their schedule day by day, and they can even share ideas to improve the app. 
